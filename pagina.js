@@ -1,34 +1,23 @@
-function obtenerValores() {
-    const n1 = parseFloat(document.getElementById("num1").value);
-    const n2 = parseFloat(document.getElementById("num2").value);
-    return { n1, n2 };
-}
+window.onload = function () {
 
-function mostrarResultado(valor) {
-    document.getElementById("resultado").textContent = valor;
-}
+    let nombre = prompt("¿Cuál es tu nombre?");
+    let nacimiento = prompt("¿En qué año naciste?");
+    let añoActual = 2025;
 
-function sumar() {
-    const { n1, n2 } = obtenerValores();
-    mostrarResultado(n1 + n2);
-}
+    // Convertir el año a número
+    nacimiento = parseInt(nacimiento);
 
-function restar() {
-    const { n1, n2 } = obtenerValores();
-    mostrarResultado(n1 - n2);
-}
+    // Calcular edad
+    let edad = añoActual - nacimiento;
 
-function multiplicar() {
-    const { n1, n2 } = obtenerValores();
-    mostrarResultado(n1 * n2);
-}
+    // Seleccionamos el div del resultado
+    const resultado = document.getElementById("resultado");
 
-function dividir() {
-    const { n1, n2 } = obtenerValores();
-
-    if (n2 === 0) {
-        mostrarResultado("Error (división entre 0)");
-    } else {
-        mostrarResultado(n1 / n2);
+    // Validaciones básicas
+    if (!nombre || isNaN(nacimiento)) {
+        resultado.textContent = "Datos inválidos. Recarga la página e intenta nuevamente.";
+        return;
     }
-}
+
+    resultado.textContent = `Hola, ${nombre}. Tienes ${edad} años.`;
+};
