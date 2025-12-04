@@ -1,4 +1,4 @@
-/* Fondo suave */
+
 body {
     background-color: #eef4ff;
     font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Encabezado */
+
 header {
     background-color: #3b6ef5;
     color: white;
@@ -15,7 +15,7 @@ header {
     margin-bottom: 30px;
 }
 
-/* Contenedor del resultado */
+
 .caja-resultado {
     background-color: white;
     width: 60%;
