@@ -10,13 +10,17 @@
 <body>
     <header>
         <h1>Calculadora de Edad</h1>
-        <p>Introduce tu nombre y tu año de nacimiento para calcular tu edad actual.</p>
+        <p>Introduce tu nombre y tu año de nacimiento para calcular tu edad.</p>
     </header>
 
     <main>
-        <div id="resultado" class="caja-resultado">
-            
+        <div class="formulario">
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+            <input type="number" id="nacimiento" placeholder="Año de nacimiento">
+            <button onclick="calcularEdad()">Calcular</button>
         </div>
+
+        <div id="resultado" class="caja-resultado"></div>
     </main>
 </body>
 </html>

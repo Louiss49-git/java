@@ -1,4 +1,3 @@
-
 body {
     background-color: #eef4ff;
     font-family: Arial, sans-serif;
@@ -7,7 +6,6 @@ body {
     padding: 0;
 }
 
-
 header {
     background-color: #3b6ef5;
     color: white;
@@ -15,12 +13,38 @@ header {
     margin-bottom: 30px;
 }
 
+.formulario {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #3b6ef5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e57c5;
+}
 
 .caja-resultado {
     background-color: white;
     width: 60%;
     margin: auto;
-    padding: 30px;
+    padding: 25px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     font-size: 22px;

@@ -1,23 +1,16 @@
-window.onload = function () {
+function calcularEdad() {
+    const nombre = document.getElementById("nombre").value;
+    const nacimiento = parseInt(document.getElementById("nacimiento").value);
+    const añoActual = 2025;
 
-    let nombre = prompt("¿Cuál es tu nombre?");
-    let nacimiento = prompt("¿En qué año naciste?");
-    let añoActual = 2025;
-
-    
-    nacimiento = parseInt(nacimiento);
-
-    
-    let edad = añoActual - nacimiento;
-
-    
     const resultado = document.getElementById("resultado");
 
-    
     if (!nombre || isNaN(nacimiento)) {
-        resultado.textContent = "Datos inválidos. Recarga la página e intenta nuevamente.";
+        resultado.textContent = "Por favor, completa todos los campos.";
         return;
     }
 
+    const edad = añoActual - nacimiento;
+
     resultado.textContent = `Hola, ${nombre}. Tienes ${edad} años.`;
-};
+}
