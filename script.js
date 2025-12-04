@@ -12,5 +12,5 @@ function calcularEdad() {
 
     const edad = añoActual - nacimiento;
 
-    resultado.textContent = `Hola, ${nombre}. Tienes ${edad} años.`;
+    resultado.textContent = `Hola ${nombre}, tienes ${edad} años de edad.`;
 }
